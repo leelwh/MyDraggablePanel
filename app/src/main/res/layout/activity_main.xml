@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.apuser.mydraggablepanel.MainFragment"
+        android:id="@+id/main_fragment"
+        tools:context=".MainActivity"></fragment>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.apuser.mydraggablepanel.DraggableFragment"
+        android:id="@+id/draggable_fragment"
+        tools:context=".MainActivity"></fragment>
+</FrameLayout>

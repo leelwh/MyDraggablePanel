@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.github.pedrovgs.DraggableView
+        xmlns:draggable_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/draggable_view"
+        draggable_view:top_view_id="@+id/image_view"
+        draggable_view:bottom_view_id="@+id/text_view"
+        draggable_view:top_view_x_scale_factor="@dimen/x_draggable_scale_factor"
+        draggable_view:top_view_y_scale_factor="@dimen/y_draggable_scale_factor"
+        draggable_view:top_view_margin_right="@dimen/main_margin"
+        draggable_view:top_view_margin_bottom="@dimen/main_margin"
+        android:visibility="gone"
+        >
+        <TextView android:text="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/image_view"
+            android:id="@+id/text_view"
+            android:layout_height="match_parent"
+            android:background="@color/secondary_color"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fan_art_height"
+            android:layout_alignParentTop="true"
+            android:id="@+id/image_view"
+            android:scaleType="centerCrop"
+            android:background="@drawable/beauty_photo"
+            />
+    </com.github.pedrovgs.DraggableView>
+</FrameLayout>

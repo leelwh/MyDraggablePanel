@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/AppTheme.ProgressBar"/>
+
+    <ImageView
+        android:id="@+id/v_empty_case"
+        style="@style/AppTheme.EmptyCase"/>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="android.support.v7.widget.RecyclerView"
+        android:id="@+id/recycler_view"></view>
+</FrameLayout>
